@@ -9,8 +9,8 @@ Your task is to develop an API that moves the rovers around on the plateau.
 
 In this API, the plateau is represented as a 10x10 grid, and a rover has state consisting of two parts:
 
-its position on the grid (represented by an X,Y coordinate pair)
-the compass direction it's facing (represented by a letter, one of N, S, E, W)
+1. Its position on the grid (represented by an X,Y coordinate pair)
+2. The compass direction it's facing (represented by a letter, one of N, S, E, W)
 
 ### Input
 
