@@ -8,24 +8,22 @@ public class MarsRover {
 		return currentDirection;
 	}
 
-	public String turnRight() {
+	public void turnRight() {
 			if (currentDirection.equals("N")) {
 				currentDirection = "E";
-				return currentDirection;
+				return;
 			}
 			if (currentDirection.equals("E")) {
 				currentDirection = "S";
-				return currentDirection;
+				return;
 			}
 			if (currentDirection.equals("S")) {
 				currentDirection = "W";
-				return currentDirection;
+				return;
 			}
 			if (currentDirection.equals("W")) {
 				currentDirection = "N";
-				return currentDirection;
 			}
-		return currentDirection;
 	}
 
 	public void movement(String input) {
