@@ -8,7 +8,16 @@ public class MarsRover {
 		return currentDirection;
 	}
 
-	public void turnRight() {
+
+	public void movement(String input) {
+		char[] moveCommands = input.toCharArray();
+		for (char moveCommand : moveCommands) {
+			if (moveCommand == 'R') {
+				turnRight();
+			}
+		}
+	}
+	private void turnRight() {
 			if (currentDirection.equals("N")) {
 				currentDirection = "E";
 				return;
@@ -24,14 +33,5 @@ public class MarsRover {
 			if (currentDirection.equals("W")) {
 				currentDirection = "N";
 			}
-	}
-
-	public void movement(String input) {
-		char[] moveCommands = input.toCharArray();
-		for (char moveCommand : moveCommands) {
-			if (moveCommand == 'R') {
-				turnRight();
-			}
-		}
 	}
 }
